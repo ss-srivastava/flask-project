@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home page</title>
+</head>
+<body>
+   <div>
+      <h1>This is the home of webpage webpage</h1>
+      <p>{{user | upper}} {{user| capitalize}} {{user|lower}}you will learn great things, I am sure of it</p>
+      <ul>
+         {% for item in list %}
+         <li>{{item |capitalize}}</li>
+         {% endfor %}
+      </ul>
+      <ul>
+         {% for item in list %}
+         <li>{{item |upper}}</li>
+         {% endfor %}
+      </ul>
+      <ul>
+         {% for item in f_list| reverse %}
+         <li>{{item |upper}}</li> {{item| reverse}}
+         {% endfor %}
+      </ul>
+      <ul>
+         <li>{{list.0}}</li>
+         <li>{{list.1}}</li>
+         <li>{{list.2}}</li>
+         <li>{{list.3}}</li>
+         <li>{{list.4}}</li>
+         <li>{{list.5 +'I love you my friend'}}</li>
+         <li>{{list.6 + 52}}</li>
+         <li>{{list.7 +56}}</li> 
+         <!-- you can do expression with listitems -->
+      </ul>
+
+   </div>
+   
+</body>
+</html>
